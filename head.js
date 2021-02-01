@@ -6,4 +6,6 @@ const head = function(myArray) {
   }
 };
 
-head(["Welcome", "Lighthouse Labs","Bootcamp"]);
+head(["Welcome!", "Lighthouse Labs","Bootcamp"]);
+
+module.exports = head;
