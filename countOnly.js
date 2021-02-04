@@ -1,19 +1,11 @@
-// Function counts a specific subset of items taken from a collection of them and returns their count1
+// Function counts a specific subset of items taken from a collection of them and returns their count.
 const assertEqual = function(actual, expected) {
-  //let mesg = "qqqqq";
   if (actual !== expected) {
-  //  mesg = "🛑🛑🛑 Assertion Failed: " + actual + " !== " + expected;
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   } else {
-  //  mesg = "✅✅✅ Assertion Passed: " + actual + " === " + expected;
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   }
-  //console.log(mesg);
   return;
-};
-
-const assertArrayEqual = function(array1, array2) {
-  assertEqual(eqArrays(array1, array2));
 };
 
 const countOnly = function(allItems, itemsToCount) {
