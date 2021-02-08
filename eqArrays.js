@@ -1,5 +1,6 @@
-// FUNCTION TESTS IF TWO ARRAYS ARE EQUAL
+const assertEqual = require('./assertEqual');
 
+// FUNCTION TESTS IF TWO ARRAYS ARE EQUAL
 const eqArrays = function(array1, array2) {
   if (array1 === undefined || array2 === undefined) {
     if (array1 === undefined && array2 === undefined) {
