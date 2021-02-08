@@ -1,3 +1,4 @@
+// FUNCTION ASSERTS THAT TWO OBJECTS ARE EQUAL
 const assertEqual = function(actual, expected) {
   if (actual !== expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
