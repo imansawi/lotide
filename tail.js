@@ -1,3 +1,5 @@
+const assertArraysEqual = require('./assertArraysEqual');
+
 // FUNCTION RETURNS TAIL OF AN ARRAY
 const tail = function(myArray) {
   if (myArray.length <= 1) {
