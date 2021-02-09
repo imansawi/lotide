@@ -1,5 +1,4 @@
-// Function maps an each element of an array of strings with an array of the first letterof these strings
-//const words = ["ground", "control", "to", "major", "tom"];
+// A FUNCTION MAPS EACH ELEMENT OF AN ARRAY WITH AN ARRAY OF ELEMENTS RELATED TO THE FIRST ONE WITH A CERTAI CONDITION
 
 const map = function(array, callback) {
   const results = [];

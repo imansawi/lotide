@@ -1,6 +1,5 @@
 // A FUNCTION CHECKS IF TWO OBJECTS ARE EQUAL
 
-const assertEqual = require('./assertEqual');
 const eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1, object2) {
