@@ -1,20 +1,4 @@
-// // FUNCTION IMPLEMENTATION
-// const assertEqual = function(actual, expected) {
-//   //let mesg = "qqqqq";
-//   if (actual !== expected) {
-//   //  mesg = "🛑🛑🛑 Assertion Failed: " + actual + " !== " + expected;
-//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-//   } else {
-//   //  mesg = "✅✅✅ Assertion Passed: " + actual + " === " + expected;
-//     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-//   }
-//   //console.log(mesg);
-//   return;
-// };
-
-// const assertArrayEqual = function(array1, array2) {
-//   assertEqual(eqArrays(array1, array2));
-// };
+// A FUNCTION COUNTS THE LETTERS IN A STRING
 
 const countLetters = function(str) {
   if (str.length === 0) {
@@ -41,29 +25,6 @@ const countLetters = function(str) {
     }
     return result;
   }
-  };
-  
-  const sentence = "lighthouse in the house";//"lighthouse in the house";
-  console.log(countLetters(sentence));
-  
-  //RESULT
-  // {
-  //   l: 1,
-  //   i: 2,
-  //   g: 1,
-  //   h: 4,
-  //   t: 2,
-  //   o: 2,
-  //   u: 2,
-  //   s: 2,
-  //   e: 3,
-  //   n: 1,
-  // }
-  
-  
-  
-  // TEST CODE
-  // assertEqual(result1["Jason"], 1);
-  // assertEqual(result1["Karima"], undefined);
-  // assertEqual(result1["Fang"], 2);
-  // assertEqual(result1["Agouhanna"], undefined);
+};
+
+module.exports = countLetters;

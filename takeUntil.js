@@ -1,4 +1,5 @@
-//Callback function returns the given array until a condition is true
+// A CALLBACK FUNCTION RETURNS AN ARRAY UNTIL A SPECIFIC CONDITION IS TRUE
+
 const takeUntil = function(array, callback) {
   const results = [];
   for (let item of array) {
@@ -19,3 +20,5 @@ console.log('---');
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
+
+module.exports = takeUntil;

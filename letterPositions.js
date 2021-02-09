@@ -1,35 +1,4 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  //let mesg = "qqqqq";
-  if (actual !== expected) {
-  //  mesg = "🛑🛑🛑 Assertion Failed: " + actual + " !== " + expected;
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  } else {
-  //  mesg = "✅✅✅ Assertion Passed: " + actual + " === " + expected;
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  }
-  //console.log(mesg);
-  return;
-};
-
-const eqArrays = function(array1, array2, ) {
-  let isEqual = true;  
-  if ((array1.length !== 0) && (array2.length !== 0) && (array1.length === array2.length)) {
-    for (i = 0; i < array1.length; i++) {
-      if (array1[i] !== array2[i]) {
-        isEqual = false;
-        break;
-      }
-    }
-  } else {
-    isEqual = false;
-  }
-  return isEqual;
-};    
-
-const assertArraysEqual = function(array1, array2) {
-  assertEqual(eqArrays(array1, array2));
-};
+// A FUNCTION RETURNS COUNT OF ITEMSWITH A SPECIFIC CONDITION
 
 const letterPositions = function(str) {
 if (str.length === 0) {
@@ -61,10 +30,11 @@ if (str.length === 0) {
 }   
 };
 
+module.exports = letterPositions;
 
 //TESTING
-const sstr = "hello";//"lighthouse in the house";
-console.log(letterPositions(sstr));
+// const sstr = "hello";//"lighthouse in the house";
+// console.log(letterPositions(sstr));
 
 
 //RESULT
@@ -85,8 +55,3 @@ console.log(letterPositions(sstr));
 // const result1 = {};
 // return result1;
 // result1 = letterPositions(sentence);
-
-console.log(assertArraysEqual(letterPositions("hello").h, [0]));
-console.log(assertArraysEqual(letterPositions("hello").e, [1]));
-console.log(assertArraysEqual(letterPositions("hello").l, [2, 3]));
-console.log(assertArraysEqual(letterPositions("hello").o, [4]));
